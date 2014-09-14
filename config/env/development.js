@@ -6,7 +6,7 @@ module.exports = {
     debug: true
   },
   app: {
-    name: 'Diary'
+    name: 'Manage a personal diary'
   },
   facebook: {
     clientID: 'APP_ID',
