@@ -12,10 +12,10 @@ var hasAuthorization = function(req, res, next) {
 
 module.exports = function(Articles, app, auth) {
 
-  app.route('/articles')
+  app.route('/entries')
     .get(articles.all)
     .post(auth.requiresLogin, articles.create);
-  app.route('/articles/:articleId')
+  app.route('/entries/:articleId')
     .get(articles.show)
     .put(auth.requiresLogin, hasAuthorization, articles.update)
     .delete(auth.requiresLogin, hasAuthorization, articles.destroy);

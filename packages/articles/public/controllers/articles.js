@@ -16,7 +16,7 @@ angular.module('mean.articles').controller('ArticlesController', ['$scope', '$st
           content: this.content
         });
         article.$save(function(response) {
-          $location.path('articles/' + response._id);
+          $location.path('entries/' + response._id);
         });
 
         this.title = '';
@@ -37,7 +37,7 @@ angular.module('mean.articles').controller('ArticlesController', ['$scope', '$st
         }
       } else {
         $scope.article.$remove(function(response) {
-          $location.path('articles');
+          $location.path('entries');
         });
       }
     };
@@ -51,7 +51,7 @@ angular.module('mean.articles').controller('ArticlesController', ['$scope', '$st
         article.updated.push(new Date().getTime());
 
         article.$update(function() {
-          $location.path('articles/' + article._id);
+          $location.path('entries/' + article._id);
         });
       } else {
         $scope.submitted = true;
