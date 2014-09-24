@@ -1,4 +1,4 @@
-# Diary
+# diary
 
 A web application to keep track of an online diary. Features include basic functionality like creating, editing, deleting, and viewing diary entries.
 
