@@ -1,9 +1,16 @@
 h1 {
 	text-align: center
 }
-ul.articles li:not(:last-child) {
-	border-bottom: 1px solid #ccc
-}
 ul.articles li {
 	list-style: none;
+	padding: 15px 0;
+}
+ul.articles li:first-child {
+	padding-top: 0;
+}
+ul.articles li:last-child {
+	padding-bottom: 0;
+}
+ul.articles li:not(:last-child) {
+	border-bottom: 1px solid #ccc
 }
