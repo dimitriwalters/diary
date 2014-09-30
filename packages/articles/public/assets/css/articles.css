@@ -14,3 +14,8 @@ ul.articles li:last-child {
 ul.articles li:not(:last-child) {
 	border-bottom: 1px solid #ccc
 }
+
+form.create-entry {
+	max-width: 600px;
+	margin: 0 auto;
+}

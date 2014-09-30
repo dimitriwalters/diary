@@ -1,5 +1,5 @@
 <section data-ng-controller="ArticlesController">
-  <form name="articleForm" class="form-horizontal col-6" role="form" data-ng-submit="create(articleForm.$valid)" novalidate>
+  <form name="articleForm" class="form-horizontal col-6 create-entry" role="form" data-ng-submit="create(articleForm.$valid)" novalidate>
     <div class="form-group" ng-class="{ 'has-error' : submitted && articleForm.title.$invalid }">
       <label mean-token="'create-title'" class="col-3 control-label">Title</label>
       <div class="col-9">
