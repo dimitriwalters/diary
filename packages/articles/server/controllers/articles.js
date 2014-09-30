@@ -85,7 +85,7 @@ exports.show = function(req, res) {
  * List of Articles
  */
 exports.all = function(req, res) {
-  Article.find().sort('-created').populate('user', 'name username').exec(function(err, articles) {
+    Article.find({user: req.user._id}).exec(function(err, articles) {
     if (err) {
       return res.json(500, {
         error: 'Cannot list the articles'
